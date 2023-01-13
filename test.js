@@ -3,10 +3,10 @@ const linebot = require('linebot');
 
 // 用於辨識Line Channel的資訊
 const bot = linebot({
-  channelId: '1657817477',
-  channelSecret: '6937496bdce8e97d7c0168befe610198',
+  channelId: process.env.CHANNEL_ID,
+  channelSecret: process.env.CHANNEL_SECRET,
   channelAccessToken:
-    'MdvIEy+GnPj7oM9r20NqwRQTJyN26abTkTXO0fHGsa6ZsolFRLcFPyj3SWm8bGpBhAIl/LdLIavM9UB3418ep/q4kp4U/BkkWuk6QdtZkGWIu12LEl4pIZ2jGc2SsedS6OicxoSUWYw8q7mOIPgbNAdB04t89/1O/w1cDnyilFU=',
+  process.env.CHANNEL_SECRET,
 });
 
 // 當有人傳送訊息給Bot時
